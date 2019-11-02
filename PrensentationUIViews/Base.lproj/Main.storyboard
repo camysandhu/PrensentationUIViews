@@ -173,6 +173,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXV-Kf-Ydf">
+                                <rect key="frame" x="4" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="PickerView" id="3xp-dz-B3Q">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="kEs-or-eWm">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Yv1-Gn-WUe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="jpw-Ph-qF0"/>
@@ -218,4 +231,7 @@
         <image name="b" width="426.66665649414062" height="256"/>
         <image name="camy" width="357.66665649414062" height="446.33334350585938"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yv1-Gn-WUe"/>
+    </inferredMetricsTieBreakers>
 </document>
