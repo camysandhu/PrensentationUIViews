@@ -13,6 +13,11 @@
 		1AD48A6F236DEE000005E36F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD48A6D236DEE000005E36F /* Main.storyboard */; };
 		1AD48A71236DEE060005E36F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD48A70236DEE060005E36F /* Assets.xcassets */; };
 		1AD48A74236DEE060005E36F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD48A72236DEE060005E36F /* LaunchScreen.storyboard */; };
+		1AD48A7C236DF4F30005E36F /* camy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD48A7B236DF4F30005E36F /* camy.png */; };
+		1AD48A7E236DF5900005E36F /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD48A7D236DF58F0005E36F /* a.png */; };
+		1AD48A80236DF5940005E36F /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD48A7F236DF5940005E36F /* b.png */; };
+		1AD48A82236DFBD20005E36F /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD48A81236DFBD20005E36F /* ScrollViewController.swift */; };
+		1AD48A84236E00A50005E36F /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD48A83236E00A50005E36F /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1AD48A70236DEE060005E36F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AD48A73236DEE060005E36F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AD48A75236DEE060005E36F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD48A7B236DF4F30005E36F /* camy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camy.png; sourceTree = "<group>"; };
+		1AD48A7D236DF58F0005E36F /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
+		1AD48A7F236DF5940005E36F /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
+		1AD48A81236DFBD20005E36F /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		1AD48A83236E00A50005E36F /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				1AD48A67236DEE000005E36F /* AppDelegate.swift */,
 				1AD48A69236DEE000005E36F /* SceneDelegate.swift */,
+				1AD48A7D236DF58F0005E36F /* a.png */,
+				1AD48A7B236DF4F30005E36F /* camy.png */,
+				1AD48A7F236DF5940005E36F /* b.png */,
 				1AD48A6B236DEE000005E36F /* ViewController.swift */,
 				1AD48A6D236DEE000005E36F /* Main.storyboard */,
 				1AD48A70236DEE060005E36F /* Assets.xcassets */,
 				1AD48A72236DEE060005E36F /* LaunchScreen.storyboard */,
 				1AD48A75236DEE060005E36F /* Info.plist */,
+				1AD48A81236DFBD20005E36F /* ScrollViewController.swift */,
+				1AD48A83236E00A50005E36F /* PickerViewController.swift */,
 			);
 			path = PrensentationUIViews;
 			sourceTree = "<group>";
@@ -125,8 +140,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD48A80236DF5940005E36F /* b.png in Resources */,
 				1AD48A74236DEE060005E36F /* LaunchScreen.storyboard in Resources */,
+				1AD48A7C236DF4F30005E36F /* camy.png in Resources */,
 				1AD48A71236DEE060005E36F /* Assets.xcassets in Resources */,
+				1AD48A7E236DF5900005E36F /* a.png in Resources */,
 				1AD48A6F236DEE000005E36F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD48A84236E00A50005E36F /* PickerViewController.swift in Sources */,
 				1AD48A6C236DEE000005E36F /* ViewController.swift in Sources */,
 				1AD48A68236DEE000005E36F /* AppDelegate.swift in Sources */,
 				1AD48A6A236DEE000005E36F /* SceneDelegate.swift in Sources */,
+				1AD48A82236DFBD20005E36F /* ScrollViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
