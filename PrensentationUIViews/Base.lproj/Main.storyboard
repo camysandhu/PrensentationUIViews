@@ -50,6 +50,19 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dIV-yH-icC">
+                                <rect key="frame" x="9" y="0.0" width="385" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="WebView" id="CjR-sr-kjC">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="nOf-Ub-LQH">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="aG6-Qf-ic0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="sv7-8j-lWd"/>
@@ -62,6 +75,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zG4-Ue-gbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-659.4202898550725" y="133.92857142857142"/>
+        </scene>
+        <!--Text View Controller-->
+        <scene sceneID="Zur-Fn-Svo">
+            <objects>
+                <viewController id="pNZ-rD-EcH" customClass="TextViewController" customModule="PrensentationUIViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfn-FA-AFt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Superstar" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="koC-dz-pQF">
+                                <rect key="frame" x="20" y="186" width="374" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpR-zJ-eNo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="TextView" id="14q-hS-GPb">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="wGW-Ud-O11">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="ptS-Fp-JOh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="632-ai-SSd">
+                                <rect key="frame" x="92" y="121" width="231" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri2-fb-fhp">
+                                <rect key="frame" x="132" y="759" width="150" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonAction:" destination="pNZ-rD-EcH" eventType="touchUpInside" id="T0d-f2-nDy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Xts-7Z-i3J"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X7C-QD-ulf"/>
+                    <connections>
+                        <outlet property="labelText" destination="632-ai-SSd" id="OC2-Zj-bUd"/>
+                        <outlet property="textView" destination="koC-dz-pQF" id="mbp-GJ-eI3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Utu-HY-QNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-659.4202898550725" y="843.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -133,6 +204,9 @@
                                 <state key="normal" title="TextView">
                                     <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="pNZ-rD-EcH" kind="show" id="j2E-4H-8Vo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qK-Zx-Ue7">
                                 <rect key="frame" x="76" y="697" width="256" height="46"/>
@@ -322,6 +396,6 @@
         <image name="camy" width="357.66665649414062" height="446.33334350585938"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Yv1-Gn-WUe"/>
+        <segue reference="ptS-Fp-JOh"/>
     </inferredMetricsTieBreakers>
 </document>
