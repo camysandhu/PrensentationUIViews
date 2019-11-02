@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, WKNavigationDelegate {
 
     
    
@@ -18,7 +18,7 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
             super.viewDidLoad()
             
-            webKitView.navigationDelegate = self as? WKNavigationDelegate
+            webKitView.navigationDelegate = self 
             webKitView.allowsBackForwardNavigationGestures = true
             
             //self.loadFromString()

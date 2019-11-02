@@ -28,26 +28,24 @@
                                 <rect key="frame" x="18" y="772" width="396" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Home" id="mH3-aJ-rM0">
+                                    <barButtonItem title="Home" id="dtu-Oa-f3g">
                                         <connections>
-                                            <action selector="webBrowserAction:" destination="ARy-Ef-t1z" id="idE-YL-lO4"/>
+                                            <action selector="webBrowserAction:" destination="ARy-Ef-t1z" id="kwo-0T-zfF"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kCj-jS-WQ5"/>
-                                    <barButtonItem title="next" id="tHr-VP-2nA">
+                                    <barButtonItem title="NextPage" id="XCu-Qj-b6R">
                                         <connections>
-                                            <action selector="webBrowserAction:" destination="ARy-Ef-t1z" id="Wuu-BR-kVJ"/>
+                                            <action selector="webBrowserAction:" destination="ARy-Ef-t1z" id="WiH-x9-E8F"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="prev" width="151" id="dKR-6Y-TgI">
+                                    <barButtonItem title="PreviousPage" id="oXL-sD-o7M">
                                         <connections>
-                                            <action selector="webBrowserAction:" destination="ARy-Ef-t1z" id="vzU-lB-jOT"/>
+                                            <action selector="webBrowserAction:" destination="ARy-Ef-t1z" id="srA-NB-Ios"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="p08-Sl-AVp"/>
-                                    <barButtonItem title="reload" id="Bmz-uL-U0p">
+                                    <barButtonItem title="Reload" id="B57-Xt-Jib">
                                         <connections>
-                                            <action selector="webBrowserAction:" destination="ARy-Ef-t1z" id="Iez-MY-J3d"/>
+                                            <action selector="webBrowserAction:" destination="ARy-Ef-t1z" id="T94-A7-HKH"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -119,14 +117,6 @@
                                     <segue destination="D1n-H9-t6d" kind="show" id="PMy-s6-fQY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw5-dK-FlU">
-                                <rect key="frame" x="79" y="408" width="256" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="SplitView">
-                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDZ-3A-6XP">
                                 <rect key="frame" x="76" y="500" width="256" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -151,7 +141,7 @@
                                 <state key="normal" title="Alerts"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwe-Qc-jVx">
-                                <rect key="frame" x="79" y="782" width="256" height="46"/>
+                                <rect key="frame" x="79" y="425" width="256" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.67657268319504937" green="1" blue="0.73428968305381481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="MapView"/>
