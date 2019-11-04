@@ -8,19 +8,23 @@
 
 import UIKit
 
-class ScrollViewController: UIViewController {
+class ScrollViewController: UIViewController
+{
 
+    @IBOutlet weak var scrollView: UIScrollView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-//        scrollView.contentSize.height=1000
+        scrollView.contentSize.height=1000
     }
-//    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
 
-//    super.didReceiveMemoryWarning()
-    
-//    }
-    
-
-}
+    super.didReceiveMemoryWarning()
+        
+//               self.scrollView.dataSource = self
+//               self.scrollView.delegate = self
+    }
+    }
